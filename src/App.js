@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import "./style.css";
-
-function SayHello() {
-  return <h1>Welcome to React JSX</h1>;
-}
+import Clock from "./Clock";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <header className="App-header">
-          <SayHello />
-        </header>
+      <div className="App">
+        <div className="App-header">
+          <h2>Welcome to React</h2>
+        </div>
+        <Clock />
       </div>
     );
   }
